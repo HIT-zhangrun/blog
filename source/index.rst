@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 欢迎来到张润的博客
-=================
+===================
 
 .. toctree::
    :maxdepth: 2
