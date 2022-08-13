@@ -6,9 +6,13 @@
 欢迎来到张润的博客
 ===================
 
+| 依托github构建的静态博客: `https://zhangrun-blog.readthedocs.io <https://zhangrun-blog.readthedocs.io/>`_  
+| 依托个人服务器构建的静态博客: `https://www.zhangrun.space <https://www.zhangrun.space/>`_
+
 .. toctree::
    :maxdepth: 2
    :caption: 目录:
+
 
    template/index
 
