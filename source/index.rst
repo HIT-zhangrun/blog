@@ -10,14 +10,19 @@
 - 依托个人服务器构建的本站链接: `https://www.zhangrun.space <https://www.zhangrun.space/>`_
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: 目录
 
    source/传感器和模块/index
 
+.. toctree::
+   :maxdepth: 3
+   :caption: 效率和分享
+
+   source/效率和分享/搭建博客
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: 关于
 
    source/about/aboutme
@@ -26,7 +31,7 @@
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: 模板
 
    source/template/index
