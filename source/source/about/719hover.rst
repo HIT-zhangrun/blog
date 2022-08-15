@@ -102,3 +102,7 @@ CADC垂直起降载运飞行器
 .. image:: pic/719/11.jpg
    :align: center
    :width: 3in
+
+.. raw:: html
+
+   <iframe src="https://upos-sz-mirrorali.bilivideo.com/upgcxcode/19/28/271582819/271582819-1-16.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1660487828&gen=playurlv2&os=alibv&oi=2028297073&trid=9938e3e8858b43c481c29ca9a8abb63dh&mid=17842012&platform=html5&upsig=45d9dc04f341b08b77b06700b932b29d&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&bvc=vod&nettype=0&bw=53043&logo=80000000" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>

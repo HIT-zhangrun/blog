@@ -22,6 +22,7 @@
 
    source/about/aboutme
    source/about/719hover
+   source/about/纳新常见问题
 
 
 .. toctree::
