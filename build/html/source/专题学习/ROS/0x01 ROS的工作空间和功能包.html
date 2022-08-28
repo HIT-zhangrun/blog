@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>一、工作空间 &mdash; zhangrun blog  documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> zhangrun blog
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">开源项目</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/index.html">开源项目</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">传感器和模块</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../%E4%BC%A0%E6%84%9F%E5%99%A8%E5%92%8C%E6%A8%A1%E5%9D%97/index.html">传感器和模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">专题学习</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">ROS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">效率和分享</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../%E6%95%88%E7%8E%87%E5%92%8C%E5%88%86%E4%BA%AB/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html">使用sphinx、github/个人服务器搭建</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">关于</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about/aboutme.html">个人介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/719hover.html">719飞行器实验室介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/%E7%BA%B3%E6%96%B0%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.html">纳新常见问题</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">模板</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../template/index.html">第一级目录</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">zhangrun blog</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>一、工作空间</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/source/专题学习/ROS/0x01 ROS的工作空间和功能包.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>一、工作空间<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
+<p><img alt="image.png" src="https://cdn.nlark.com/yuque/0/2022/png/8427069/1654348447856-0465f52b-1a6c-4df8-bba1-6efb2b9a872b.png#clientId=u58d9625c-6d01-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=362&amp;id=u2863c44b&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=515&amp;originWidth=769&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=62486&amp;status=done&amp;style=none&amp;taskId=uc1b83813-cf47-4280-8377-127bff3d3dc&amp;title=&amp;width=540.2000122070312" /></p>
+<ol class="simple">
+<li><p>创建工作空间</p></li>
+</ol>
+<p>mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+catkin_init_workspace初始化工作空间</p>
+<ol class="simple">
+<li><p>编译工作空间</p></li>
+</ol>
+<p>cd ../  返回主目录
+catkin_make  编译</p>
+<ol class="simple">
+<li><p>添加环境变量</p></li>
+</ol>
+<p>source devel/setup.bash
+echo $ROS_PACKAGE_PATH查看ROS的环境变量</p>
+</section>
+<section id="id2">
+<h1>二、功能包<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h1>
+<p>功能包就是每个ros的功能个体
+<img alt="image.png" src="https://cdn.nlark.com/yuque/0/2022/png/8427069/1654348910899-513e2f0e-2081-4e16-82b0-a22a941a9c02.png#clientId=u58d9625c-6d01-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=434&amp;id=uedb70806&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=542&amp;originWidth=486&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=55787&amp;status=done&amp;style=none&amp;taskId=u62df2441-2d95-458e-b3eb-5a51bb3409e&amp;title=&amp;width=388.8" />
+一个功能包中的内容
+include: .h文件
+src: .cpp文件
+launch： launch文件
+urdf： .urdf文件
+config： 参数文件，yaml，srv，msg，action
+scripts：可执行脚本文件（python）
+CMakelist： 编译规则
+package.xml：定义package的属性</p>
+</section>
+<section id="id3">
+<h1>三、创建功能包<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h1>
+<p>catkin_create_pkg &lt;package_name&gt; [depend1] [depend2] [depend3]
+例如：catkin_create_pkg  new_package std_msgs rospy roscpp</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, zhangrun.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

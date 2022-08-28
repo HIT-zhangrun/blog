@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>launch文件与参数服务器 &mdash; zhangrun blog  documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> zhangrun blog
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">开源项目</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/index.html">开源项目</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">传感器和模块</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../%E4%BC%A0%E6%84%9F%E5%99%A8%E5%92%8C%E6%A8%A1%E5%9D%97/index.html">传感器和模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">专题学习</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">ROS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">效率和分享</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../%E6%95%88%E7%8E%87%E5%92%8C%E5%88%86%E4%BA%AB/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html">使用sphinx、github/个人服务器搭建</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">关于</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about/aboutme.html">个人介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/719hover.html">719飞行器实验室介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/%E7%BA%B3%E6%96%B0%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.html">纳新常见问题</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">模板</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../template/index.html">第一级目录</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">zhangrun blog</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>launch文件与参数服务器</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/source/专题学习/ROS/launch文件与参数服务器.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="launch">
+<h1>launch文件与参数服务器<a class="headerlink" href="#launch" title="Permalink to this heading"></a></h1>
+<section id="id1">
+<h2>一、launch文件<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<p>可以实现多节点启动和参数配置的xml文件</p>
+<p>launch标签总览
+<img alt="image.png" src="../../../_images/launch_1.png" />
+根标签：launch文件的标签内容都需要包含在根标签下
+嵌套：包含其他的launch文件，包含其他的xml文件
+节点：
+<img alt="image.png" src="../../../_images/launch_2.png" />
+<img alt="image.png" src="../../../_images/launch_3.png" />
+参数：区别</p>
+<param>，在参数服务器中添加一个参数
+<rosparam>，从“.yaml”文件中一次性导入大量参数
+<arg>，在launch中声明一个参数
+参数服务器：
+![image.png](pic/launch_4.png)
+节点分组：
+![image.png](pic/launch_5.png)
+重命名：
+![image.png](pic/launch_6.png)</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, zhangrun.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

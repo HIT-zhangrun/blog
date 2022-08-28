@@ -9,20 +9,33 @@
 - 依托github构建的本站链接: `https://zhangrun-blog.readthedocs.io <https://zhangrun-blog.readthedocs.io/>`_  
 - 依托个人服务器构建的本站链接: `https://www.zhangrun.space <https://www.zhangrun.space/>`_
 
+
 .. toctree::
-   :maxdepth: 3
-   :caption: 目录
+   :maxdepth: 1000
+   :caption: 开源项目
+
+   source/开源项目/index
+
+.. toctree::
+   :maxdepth: 1000
+   :caption: 传感器和模块
 
    source/传感器和模块/index
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1000
+   :caption: 专题学习
+
+   source/专题学习/index
+
+.. toctree::
+   :maxdepth: 1000
    :caption: 效率和分享
 
    source/效率和分享/搭建博客
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1000
    :caption: 关于
 
    source/about/aboutme

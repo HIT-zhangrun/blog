@@ -1,0 +1,21 @@
+## 一、launch文件
+可以实现多节点启动和参数配置的xml文件
+
+launch标签总览
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/8427069/1654413252494-146b22de-5991-4027-8930-5bbdf250aa59.png#clientId=u0f30d634-0fac-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=358&id=u3a0d7876&margin=%5Bobject%20Object%5D&name=image.png&originHeight=708&originWidth=1508&originalType=binary&ratio=1&rotation=0&showTitle=false&size=135781&status=done&style=none&taskId=u80f00b5c-9a91-491d-9806-79f7d9a6330&title=&width=762.2000732421875)
+根标签：launch文件的标签内容都需要包含在根标签下
+嵌套：包含其他的launch文件，包含其他的xml文件
+节点：
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/8427069/1654413360292-45027ffb-e581-475a-a351-999af63db50d.png#clientId=u0f30d634-0fac-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=339&id=uaa543438&margin=%5Bobject%20Object%5D&name=image.png&originHeight=617&originWidth=1649&originalType=binary&ratio=1&rotation=0&showTitle=false&size=87123&status=done&style=none&taskId=u6a41afde-cce9-496c-b842-63a3d01e092&title=&width=907.2000732421875)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/8427069/1654413406629-cc56967a-9fe4-4439-9109-70e77237c9e8.png#clientId=u0f30d634-0fac-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=413&id=u5f0d1165&margin=%5Bobject%20Object%5D&name=image.png&originHeight=722&originWidth=1620&originalType=binary&ratio=1&rotation=0&showTitle=false&size=110299&status=done&style=none&taskId=u619a5790-8cfa-4e71-9316-9f72458df8b&title=&width=927.2000732421875)
+参数：区别
+<param>，在参数服务器中添加一个参数
+<rosparam>，从“.yaml”文件中一次性导入大量参数
+<arg>，在launch中声明一个参数
+参数服务器：
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/8427069/1654413507739-93810ba9-6345-4543-8851-69d0844815a0.png#clientId=u0f30d634-0fac-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=394&id=ubbe50037&margin=%5Bobject%20Object%5D&name=image.png&originHeight=493&originWidth=1014&originalType=binary&ratio=1&rotation=0&showTitle=false&size=108303&status=done&style=none&taskId=uc93d7bd5-f1f8-4a9b-8361-b4072b48dfe&title=&width=811.2)
+节点分组：
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/8427069/1654413527982-9a298013-3aa4-4954-a31c-faaf27595273.png#clientId=u0f30d634-0fac-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=356&id=ua7416899&margin=%5Bobject%20Object%5D&name=image.png&originHeight=583&originWidth=1331&originalType=binary&ratio=1&rotation=0&showTitle=false&size=75691&status=done&style=none&taskId=uc7c4dcc1-80b9-461d-b93b-3756e4d2152&title=&width=813.800048828125)
+重命名：
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/8427069/1654413552813-61ea9231-6d79-4d4e-b5a5-dbe1bbefcb34.png#clientId=u0f30d634-0fac-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=255&id=u61b88f8a&margin=%5Bobject%20Object%5D&name=image.png&originHeight=500&originWidth=1367&originalType=binary&ratio=1&rotation=0&showTitle=false&size=36792&status=done&style=none&taskId=u4469d556-f23d-45a4-b2a5-72e7ad122be&title=&width=697.5999755859375)
+
