@@ -1,7 +1,0 @@
-这是一个模板工程
-===============
-
-.. toctree::
-   :maxdepth: 2
-
-   01temp/index

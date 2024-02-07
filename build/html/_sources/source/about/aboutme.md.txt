@@ -1,7 +1,0 @@
-# 个人介绍
-
-1. jsaidj
-
-![photo](pic/photo.png)
-
-<img src='pic/photo.png' align='right' style=' width:300px'/>
