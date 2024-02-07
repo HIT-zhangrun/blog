@@ -20,5 +20,5 @@ ML01DP5
 
 #### 4. 用户手册
 
-[E01-ML01DP5_UserManual_CN_v1.4.pdf](https://github.com/HIT-zhangrun/blog/blob/master/doc/project/module/nrf-24l01/file/E01-ML01DP5_UserManual_CN_v1.4.pdf)
+[E01-ML01DP5_UserManual_CN_v1.4.pdf](https://raw.githubusercontent.com/HIT-zhangrun/blog/master/doc/project/module/nrf-24l01/file/E01-ML01DP5_UserManual_CN_v1.4.pdf)
 
